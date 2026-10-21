@@ -90,6 +90,12 @@ p {
     color: #333;
 }
 
+a {
+    font-family: "Akatab", sans-serif;
+    font-weight: 400;
+    color: #333;
+}
+
 .handwritten {
     font-family: "Architects Daughter", cursive;
     font-weight: 400;
@@ -104,6 +110,64 @@ p {
     background-color: #E6EFEF;
     padding: 20px;
     text-align: center;
+}
+
+/* Knappar */
+.btn {
+    font-family: "Amaranth", sans-serif;
+    padding: 8px 15px;
+    margin-top: 15px;
+    background-color: #7F9F9F;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #B1CFCF;
+    color: #333;
+}
+
+/*Sidfot*/
+
+#footer {
+    background-color: #B1CFCF;
+    text-align: left;
+    padding: 10px 0;
+    font-size: 0.9em;
+    display: flex;
+    gap: 50px;
+    justify-content:center;
+}
+
+#footer-logo img {
+    max-width: 60px;
+    max-height: 60px;
+    padding: 5px;
+}
+
+#footer h3 {
+    font-size: 1em;
+    font-family: "Amaranth", sans-serif;
+    font-weight: 400;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+footer a:hover, footer a:focus {
+    font-weight: 600;
+}
+
+.copyright {
+    text-align: center;
+    padding: 5px;
 }
 
 /* Färger
