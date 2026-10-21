@@ -3,31 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*
-.amaranth-regular {
-  font-family: "Amaranth", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
-.amaranth-bold {
-  font-family: "Amaranth", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.amaranth-regular-italic {
-  font-family: "Amaranth", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.amaranth-bold-italic {
-  font-family: "Amaranth", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-*/
 header {
     background-color: #B1CFCF;
     color: #E6EFEF;
@@ -53,7 +29,7 @@ header {
 
 .menu ul {
     list-style: none;
-   /* display: flex;*/
+    /* display: flex;*/
 }
 
 .menu a {
@@ -67,7 +43,8 @@ header {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.menu a:hover, header a:focus   {
+.menu a:hover,
+header a:focus {
     color: #fff;
     background-color: #7F9F9F;
     border: 1px solid #7F9F9F;
@@ -75,12 +52,111 @@ header {
     outline: none;
 }
 
+.hero {
+    background-image: url("/images/1-hero.jpg");
+    background-size: 100%;
+    text-align: center;
+}
+
+#hero-box {
+    background-color: rgba(255, 255, 255, 0.6);
+    /*Gör bakgrunden ljusare*/
+    padding: 50px;
+}
+
+.hero img {
+    max-width: 100px;
+}
+
 h1 {
-    color: #7F9F9F;
+    font-family: "Amaranth", sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #333;
+    padding: 10px;
+}
+
+p {
+    font-family: "Akatab", sans-serif;
+    font-weight: 400;
+}
+
+.handwritten {
+    font-family: "Architects Daughter", cursive;
+    font-weight: 400;
 }
 
 /* Färger
 #7F9F9F Mörkblå
 #B1CFCF Mellanblå
 #E6EFEF Ljusblå
+*/
+
+/*
+.amaranth-regular {
+  font-family: "Amaranth", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.amaranth-bold {
+  font-family: "Amaranth", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.amaranth-regular-italic {
+  font-family: "Amaranth", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.amaranth-bold-italic {
+  font-family: "Amaranth", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.akatab-regular {
+  font-family: "Akatab", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.akatab-medium {
+  font-family: "Akatab", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.akatab-semibold {
+  font-family: "Akatab", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.akatab-bold {
+  font-family: "Akatab", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.akatab-extrabold {
+  font-family: "Akatab", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.akatab-black {
+  font-family: "Akatab", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.architects-daughter-regular {
+  font-family: "Architects Daughter", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 */
