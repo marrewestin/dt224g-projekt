@@ -18,10 +18,14 @@ header {
 
 .header-wrapper {}
 
+.header-wrapper a {
+    display: inline-block;
+}
+
 .header-logo {
-    max-width: 50px;
-    padding: 8px;
-    margin-left: 12px;
+    max-width: 60px;
+    padding: 8px 12px; 
+    margin: 0 12px;
     height: auto;
 }
 
