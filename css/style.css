@@ -16,7 +16,26 @@ header {
 
 /*Sidhuvud*/
 
-.header-wrapper {}
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.menu {
+    display: none;
+    width: 100%;
+}
+
+.menu.open {
+    display: block;
+}
 
 .header-wrapper a {
     display: inline-block;
