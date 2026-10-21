@@ -72,6 +72,14 @@ h1 {
     font-family: "Amaranth", sans-serif;
     font-size: 1.5em;
     font-weight: 400;
+    color: #000000;
+    padding: 10px;
+}
+
+h2 {
+    font-family: "Amaranth", sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
     color: #333;
     padding: 10px;
 }
@@ -79,11 +87,23 @@ h1 {
 p {
     font-family: "Akatab", sans-serif;
     font-weight: 400;
+    color: #333;
 }
 
 .handwritten {
     font-family: "Architects Daughter", cursive;
     font-weight: 400;
+}
+
+.logo-font {
+    font-family: "Bowlby One", sans-serif;
+    font-weight: 400;
+}
+
+.section {
+    background-color: #E6EFEF;
+    padding: 20px;
+    text-align: center;
 }
 
 /* Färger
@@ -158,5 +178,12 @@ p {
   font-weight: 400;
   font-style: normal;
 }
+
+.bowlby-one-regular {
+  font-family: "Bowlby One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 */
