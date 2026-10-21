@@ -62,14 +62,19 @@ header a:focus {
     text-align: center;
 }
 
-#hero-box {
+/*Gör bakgrunden ljusare*/
+.transparent {
     background-color: rgba(255, 255, 255, 0.6);
-    /*Gör bakgrunden ljusare*/
     padding: 50px;
+}
+
+#assortment .transparent {
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .hero img {
     max-width: 100px;
+    padding-top: 10px;
 }
 
 h1 {
@@ -112,7 +117,13 @@ a {
 
 .section {
     background-color: #E6EFEF;
-    padding: 20px;
+    text-align: center;
+    padding: 40px;
+}
+
+#assortment {
+    background-image: url("/images/2-bread.jpg");
+    background-size: 100%;
     text-align: center;
 }
 
@@ -126,7 +137,8 @@ a {
     text-decoration: none;
     border: none;
     border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
 }
 
 .btn:hover, .btn:focus {
