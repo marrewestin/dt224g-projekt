@@ -207,7 +207,7 @@ footer a {
 
 footer a:hover,
 footer a:focus {
-    font-weight: 600;
+    color: black;
 }
 
 .copyright {
@@ -257,20 +257,51 @@ footer a:focus {
     .transparent {
         aspect-ratio: 16 / 7;
     }
+
+    #assortment-wrap {
+        display: flex;
+    }
+
+    #assortment2 {
+        background-image: url("/images/3-buns.jpg");
+        background-size: 100%;
+        background-position: center;
+        text-align: center;
+        min-width: 50%;
+    }
 }
 
 @media (min-width: 1000px) {
+
     /* Aspect-ratio för bakgrundsbilder */
     .hero {
         aspect-ratio: 16 / 5;
     }
-    .transparent { /* Gör bakgrunden ljusare */
+
+    .transparent {
+        /* Gör bakgrunden ljusare */
         aspect-ratio: 16 / 5;
     }
-    
+
     .section {
-    padding: 5%;
-}
+        padding: 5%;
+    }
+
+    #assortment2 {
+        background-image: url("/images/3-buns.jpg");
+        background-size: 100%;
+        background-position: center;
+        text-align: center;
+        min-width: 33%;
+    }
+
+    #assortment3 {
+        background-image: url("/images/6-bagels.jpg");
+        background-size: 100%;
+        background-position: center;
+        text-align: center;
+        min-width: 33%;
+    }
 }
 
 /* Färger
