@@ -77,6 +77,10 @@ header a:focus {
     outline: none;
 }
 
+.current a {
+    color: black;
+}
+
 /* Main */
 
 .hero {
@@ -117,12 +121,20 @@ h2 {
     font-weight: 500;
     color: #333;
     padding: 10px;
+    text-align: center;
 }
 
 p {
     font-family: "Akatab", sans-serif;
     font-weight: 400;
     color: #333;
+}
+
+li {
+    font-family: "Akatab", sans-serif;
+    font-weight: 400;
+    color: #333;
+    list-style-position: inside;
 }
 
 a {
@@ -151,6 +163,54 @@ a {
     background-image: url("/images/2-bread.jpg");
     background-size: 100%;
     background-position: center;
+    text-align: center;
+}
+
+.about {
+    display: grid;
+}
+
+#card-img {
+    background-image: url("/images/8-bakery.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    aspect-ratio: 1200 / 800;
+}
+
+#card-img1 {
+    background-image: url("/images/9-bake.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    aspect-ratio: 1200 / 800;
+}
+
+#card-img2 {
+    background-image: url("/images/9-bake.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    aspect-ratio: 1200 / 800;
+    display: none;
+}
+
+/*  .card-img img {
+    max-width: 100%;
+}  */
+
+.cards {
+    text-align: center;
+    padding: 10%;
+}
+
+.cards h2 {
+    padding: 15px 20px 10px;
+}
+
+.cards p,
+.cards li {
+    padding: 0 20px 15px;
     text-align: center;
 }
 
@@ -230,7 +290,7 @@ footer a:focus {
         border: none;
     }
 
-    ul {
+    nav ul {
         list-style-type: none;
         display: flex;
     }
@@ -258,10 +318,39 @@ footer a:focus {
         aspect-ratio: 16 / 7;
     }
 
-    #assortment-wrap {
+    .section-wrap {
         display: flex;
+
     }
 
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #card-img {
+        aspect-ratio: auto;
+    }
+
+    #card-img1 {
+        display: none;
+    }
+
+    #card-img2 {
+        display: block;
+        aspect-ratio: auto;
+    }
+
+    /*     .card-img img {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .cards {
+        padding: 3%;
+    } */
+
+    /*
     #assortment2 {
         background-image: url("/images/3-buns.jpg");
         background-size: 100%;
@@ -269,6 +358,21 @@ footer a:focus {
         text-align: center;
         min-width: 50%;
     }
+
+    #about2 {
+        background-image: url("/images/3-buns.jpg");
+        background-size: 100%;
+        background-position: center;
+        text-align: center;
+        min-width: 50%;
+    }
+    #about4 {
+        background-image: url("/images/3-buns.jpg");
+        background-size: 100%;
+        background-position: center;
+        text-align: center;
+        min-width: 50%;
+    }*/
 }
 
 @media (min-width: 1000px) {
@@ -302,6 +406,12 @@ footer a:focus {
         text-align: center;
         min-width: 33%;
     }
+
+    /*
+        .card-img img {
+        object-fit: cover;
+        height: 100%;
+    }*/
 }
 
 /* Färger
