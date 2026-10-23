@@ -49,8 +49,7 @@ a {
     display: flex;
 }
 
-.grid-wrap,
-.grid-wrap2 {
+.grid-wrap {
     display: grid;
 }
 
@@ -284,6 +283,13 @@ footer a:focus {
 
 /* Sid 3: Sortiment */
 
+.grid-wrap2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 20px;
+    background-image: linear-gradient(to bottom, white, #B1CFCF);
+}
+
 #bread {
     background-image: url("/images/2-bread.jpg");
     background-size: cover;
@@ -291,6 +297,7 @@ footer a:focus {
     aspect-ratio: 16 / 11;
     position: relative;
     margin-bottom: 10px;
+    grid-column: span 6;
 }
 
 #sweet {
@@ -299,6 +306,7 @@ footer a:focus {
     background-position: center;
     aspect-ratio: 16 / 11;
     position: relative;
+    grid-column: span 6;
 }
 
 #bread h2,
@@ -311,12 +319,23 @@ footer a:focus {
     color: black;
 }
 
-/* .hero img {
-    max-width: 100px;
-    padding-top: 10px;
-} */
+article {
+    grid-column: span 3;
+    padding: 10px;
+}
 
+article img {
+    width: 100%;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
 
+article p {
+    margin: 0px;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+    background-color: #fff;
+}
 
 /* Anpassning för mellanstor skräm */
 
@@ -367,18 +386,21 @@ footer a:focus {
         min-width: 50%;
     }
 
-    .grid-wrap2 {
-        grid-template-columns: 1fr 1fr;
+    #bread,
+    #sweet {
+        margin-bottom: 0px;
+        grid-column: span 3;
     }
 
-    #bread {
-        margin-bottom: 0px;
+    article {
+        grid-column: span 2;
     }
+
     #sweet h2 {
-    position: absolute;
-    top: 0px;
-    bottom: auto;
-}
+        position: absolute;
+        top: 0px;
+        bottom: auto;
+    }
 }
 
 /* Anpassning för stor skräm */
