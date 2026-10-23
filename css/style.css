@@ -45,10 +45,26 @@ a {
     color: #333;
 }
 
+.flex-wrap {
+    display: flex;
+}
+
+.grid-wrap,
+.grid-wrap2 {
+    display: grid;
+}
+
 .section {
     background-color: #E6EFEF;
     text-align: center;
     padding: 10%;
+}
+
+.quote {
+    background-color: #E6EFEF;
+    text-align: center;
+    padding: 5%;
+    font-size: 1.4em;
 }
 
 .handwritten {
@@ -226,10 +242,6 @@ footer a:focus {
 
 /* Sid 2: Om oss */
 
-.about {
-    display: grid;
-}
-
 #about-img {
     background-image: url("/images/8-bakery.jpg");
     background-size: cover;
@@ -270,6 +282,42 @@ footer a:focus {
     text-align: center;
 }
 
+/* Sid 3: Sortiment */
+
+#bread {
+    background-image: url("/images/2-bread.jpg");
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 16 / 11;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#sweet {
+    background-image: url("/images/3-buns.jpg");
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 16 / 11;
+    position: relative;
+}
+
+#bread h2,
+#sweet h2 {
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 15px;
+    color: black;
+}
+
+/* .hero img {
+    max-width: 100px;
+    padding-top: 10px;
+} */
+
+
+
 /* Anpassning för mellanstor skräm */
 
 @media (min-width: 750px) {
@@ -306,14 +354,11 @@ footer a:focus {
     }
 
     /* Aspect-ratio för bakgrundsbilder */
-    .hero, .transparent {
+    .hero,
+    .transparent {
         aspect-ratio: 16 / 7;
     }
 
-    /* Startsidans sortiment-sektion, flex */
-    .section-wrap {
-        display: flex;
-    }
     /* Startsidans sortiment-sektion, bild vänster */
     #assortment2 {
         background-image: url("/images/3-buns.jpg");
@@ -321,6 +366,19 @@ footer a:focus {
         background-position: center;
         min-width: 50%;
     }
+
+    .grid-wrap2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #bread {
+        margin-bottom: 0px;
+    }
+    #sweet h2 {
+    position: absolute;
+    top: 0px;
+    bottom: auto;
+}
 }
 
 /* Anpassning för stor skräm */
@@ -328,7 +386,8 @@ footer a:focus {
 @media (min-width: 1000px) {
 
     /* Aspect-ratio för bakgrundsbilder */
-    .hero, .transparent {
+    .hero,
+    .transparent {
         aspect-ratio: 16 / 5;
     }
 
@@ -340,6 +399,7 @@ footer a:focus {
     #assortment2 {
         min-width: 33%;
     }
+
     #assortment3 {
         background-image: url("/images/6-bagels.jpg");
         background-size: 100%;
@@ -349,8 +409,7 @@ footer a:focus {
 
     /* Sid 2: Om oss */
 
-    .about {
-        display: grid;
+    .grid-wrap {
         grid-template-columns: 1fr 1fr;
     }
 
