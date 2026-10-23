@@ -7,11 +7,53 @@
 header {
     background-color: #B1CFCF;
     color: #E6EFEF;
-    /*padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;*/
+}
+
+h1 {
+    font-family: "Amaranth", sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #000000;
+    padding: 20px;
+}
+
+h2 {
+    font-family: "Amaranth", sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    font-family: "Akatab", sans-serif;
+    font-weight: 400;
+    color: #333;
+}
+
+li {
+    font-family: "Akatab", sans-serif;
+    font-weight: 400;
+    color: #333;
+    list-style-position: inside;
+}
+
+a {
+    font-family: "Akatab", sans-serif;
+    font-weight: 400;
+    color: #333;
+}
+
+.section {
+    background-color: #E6EFEF;
+    text-align: center;
+    padding: 10%;
+}
+
+.handwritten {
+    font-family: "Architects Daughter", cursive;
+    font-weight: 400;
 }
 
 /* Sidhuvud */
@@ -22,6 +64,19 @@ header {
     align-items: center;
     flex-wrap: wrap;
 }
+
+.header-wrapper a {
+    display: inline-block;
+}
+
+.header-logo {
+    max-width: 60px;
+    padding: 8px 12px 2px;
+    margin: 0 8px;
+    height: auto;
+}
+
+/* Meny */
 
 .menu-toggle {
     cursor: pointer;
@@ -39,19 +94,6 @@ header {
 .menu.open {
     display: block;
 }
-
-.header-wrapper a {
-    display: inline-block;
-}
-
-.header-logo {
-    max-width: 60px;
-    padding: 8px 12px 2px;
-    margin: 0 8px;
-    height: auto;
-}
-
-/* Meny */
 
 .menu ul {
     list-style: none;
@@ -91,6 +133,11 @@ header a:focus {
     aspect-ratio: 16 / 9;
 }
 
+.hero img {
+    max-width: 100px;
+    padding-top: 10px;
+}
+
 /* Gör bakgrunden ljusare */
 .transparent {
     background-color: rgba(255, 255, 255, 0.6);
@@ -98,54 +145,10 @@ header a:focus {
     aspect-ratio: 16 / 9;
 }
 
+/* Startsidan */
+
 #assortment .transparent {
     background-color: rgba(255, 255, 255, 0.8);
-}
-
-.hero img {
-    max-width: 100px;
-    padding-top: 10px;
-}
-
-h1 {
-    font-family: "Amaranth", sans-serif;
-    font-size: 1.5em;
-    font-weight: 400;
-    color: #000000;
-    padding: 20px;
-}
-
-h2 {
-    font-family: "Amaranth", sans-serif;
-    font-size: 1.2em;
-    font-weight: 500;
-    color: #333;
-    padding: 10px;
-    text-align: center;
-}
-
-p {
-    font-family: "Akatab", sans-serif;
-    font-weight: 400;
-    color: #333;
-}
-
-li {
-    font-family: "Akatab", sans-serif;
-    font-weight: 400;
-    color: #333;
-    list-style-position: inside;
-}
-
-a {
-    font-family: "Akatab", sans-serif;
-    font-weight: 400;
-    color: #333;
-}
-
-.handwritten {
-    font-family: "Architects Daughter", cursive;
-    font-weight: 400;
 }
 
 .logo-font {
@@ -153,64 +156,10 @@ a {
     font-weight: 400;
 }
 
-.section {
-    background-color: #E6EFEF;
-    text-align: center;
-    padding: 10%;
-}
-
 #assortment {
     background-image: url("/images/2-bread.jpg");
     background-size: 100%;
     background-position: center;
-    text-align: center;
-}
-
-.about {
-    display: grid;
-}
-
-#card-img {
-    background-image: url("/images/8-bakery.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    aspect-ratio: 1200 / 800;
-}
-
-#card-img1 {
-    background-image: url("/images/9-bake.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    aspect-ratio: 1200 / 800;
-}
-
-#card-img2 {
-    background-image: url("/images/9-bake.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    aspect-ratio: 1200 / 800;
-    display: none;
-}
-
-/*  .card-img img {
-    max-width: 100%;
-}  */
-
-.cards {
-    text-align: center;
-    padding: 10%;
-}
-
-.cards h2 {
-    padding: 15px 20px 10px;
-}
-
-.cards p,
-.cards li {
-    padding: 0 20px 15px;
     text-align: center;
 }
 
@@ -234,7 +183,7 @@ a {
     color: #333;
 }
 
-/* Sidfo */
+/* Sidfot */
 
 #footer {
     background-color: #B1CFCF;
@@ -275,9 +224,57 @@ footer a:focus {
     padding: 5px;
 }
 
-/* Meny för stor skräm */
+/* Sid 2: Om oss */
+
+.about {
+    display: grid;
+}
+
+#about-img {
+    background-image: url("/images/8-bakery.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    aspect-ratio: 1200 / 800;
+}
+
+#about-img1 {
+    background-image: url("/images/9-bake.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    aspect-ratio: 1200 / 800;
+}
+
+#about-img2 {
+    background-image: url("/images/9-bake.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    aspect-ratio: 1200 / 800;
+    display: none;
+}
+
+.about-text {
+    text-align: center;
+    padding: 10%;
+}
+
+.about-text h2 {
+    padding: 15px 20px 10px;
+}
+
+.about-text p,
+.about-text li {
+    padding: 0 20px 15px;
+    text-align: center;
+}
+
+/* Anpassning för mellanstor skräm */
 
 @media (min-width: 750px) {
+
+    /* Meny för stor skräm */
     .menu-toggle {
         display: none;
     }
@@ -309,81 +306,29 @@ footer a:focus {
     }
 
     /* Aspect-ratio för bakgrundsbilder */
-    .hero {
+    .hero, .transparent {
         aspect-ratio: 16 / 7;
     }
 
-    /* Gör bakgrunden ljusare */
-    .transparent {
-        aspect-ratio: 16 / 7;
-    }
-
+    /* Startsidans sortiment-sektion, flex */
     .section-wrap {
         display: flex;
-
     }
-
-    .about {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    #card-img {
-        aspect-ratio: auto;
-    }
-
-    #card-img1 {
-        display: none;
-    }
-
-    #card-img2 {
-        display: block;
-        aspect-ratio: auto;
-    }
-
-    /*     .card-img img {
-        object-fit: cover;
-        height: 100%;
-    }
-
-    .cards {
-        padding: 3%;
-    } */
-
-    /*
+    /* Startsidans sortiment-sektion, bild vänster */
     #assortment2 {
         background-image: url("/images/3-buns.jpg");
         background-size: 100%;
         background-position: center;
-        text-align: center;
         min-width: 50%;
     }
-
-    #about2 {
-        background-image: url("/images/3-buns.jpg");
-        background-size: 100%;
-        background-position: center;
-        text-align: center;
-        min-width: 50%;
-    }
-    #about4 {
-        background-image: url("/images/3-buns.jpg");
-        background-size: 100%;
-        background-position: center;
-        text-align: center;
-        min-width: 50%;
-    }*/
 }
+
+/* Anpassning för stor skräm */
 
 @media (min-width: 1000px) {
 
     /* Aspect-ratio för bakgrundsbilder */
-    .hero {
-        aspect-ratio: 16 / 5;
-    }
-
-    .transparent {
-        /* Gör bakgrunden ljusare */
+    .hero, .transparent {
         aspect-ratio: 16 / 5;
     }
 
@@ -391,36 +336,47 @@ footer a:focus {
         padding: 5%;
     }
 
+    /* Startsidans sortiment-sektion, bild vänster & höger */
     #assortment2 {
-        background-image: url("/images/3-buns.jpg");
-        background-size: 100%;
-        background-position: center;
-        text-align: center;
         min-width: 33%;
     }
-
     #assortment3 {
         background-image: url("/images/6-bagels.jpg");
         background-size: 100%;
         background-position: center;
-        text-align: center;
         min-width: 33%;
     }
 
-    /*
-        .card-img img {
-        object-fit: cover;
-        height: 100%;
-    }*/
+    /* Sid 2: Om oss */
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #about-img {
+        aspect-ratio: auto;
+    }
+
+    #about-img1 {
+        display: none;
+    }
+
+    #about-img2 {
+        display: block;
+        aspect-ratio: auto;
+    }
 }
 
-/* Färger
+/* Färger:
+
 #7F9F9F Mörkblå
 #B1CFCF Mellanblå
 #E6EFEF Ljusblå
 */
 
-/*
+/* Google fonts:
+
 .amaranth-regular {
   font-family: "Amaranth", sans-serif;
   font-weight: 400;
