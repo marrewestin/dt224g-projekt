@@ -344,15 +344,31 @@ article p {
 .section-contact {
     background-color: #fff;
     padding: 7%;
+    text-align: center;
+}
+
+#error-list li {
+    color: #BC0000;
+    /*list-style-type: none;*/
+}
+
+#sent p{
+    font-family: "Architects Daughter", cursive;
+    font-weight: 400;
 }
 
 #contact-form {
-    text-align: left;
+    /* text-align: left; */
     max-width: 500px;
     margin: 20px auto 10px;
     font-family: "Akatab", sans-serif;
     font-weight: 400;
     color: #333;
+}
+
+#contact-form label {
+    text-align: left;
+    display: block;
 }
 
 #name,

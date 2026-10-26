@@ -15,6 +15,7 @@ const emailInput = document.querySelector("#email")
 const phoneInput = document.querySelector("#phone")
 const messageInput = document.querySelector("#message")
 
+const sent = document.querySelector("#sent");
 const errorList = document.querySelector("#error-list");
 
 // Array som används för felmeddelanden
@@ -64,6 +65,16 @@ function displayErrors() {
     });
 }
 
+// Visar att meddelandet skickats
+function displaySent() {
+	sent.innerHTML = "<p>Tack för ditt meddelande!</p>";
+	// rensa input-fält
+	nameInput.value="";
+	emailInput.value="";
+	phoneInput.value="";
+	messageInput.value="";
+}
+
 // Eventlyssnare
 contactForm.addEventListener("submit", (event) => {
     // När formuläret skickas:
@@ -71,6 +82,8 @@ contactForm.addEventListener("submit", (event) => {
     // - validera inmatningen
     if (validateForm()) {
         console.log("Valideringen lyckades!")
+		// contactForm.submit(); // Skickar formuläret
+		displaySent();
     } else {
 		console.log("Valideringen misslyckades!")
 	}
