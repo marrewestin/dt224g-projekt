@@ -321,6 +321,14 @@ footer a:focus {
     color: black;
 }
 
+/* .bread-articles {
+    display: none;
+}
+
+.bread-articles.open {
+    display: block;
+} */
+
 article {
     grid-column: span 3;
     padding: 10px;
