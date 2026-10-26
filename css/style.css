@@ -181,15 +181,17 @@ header a:focus {
 /* Knappar */
 .btn {
     font-family: "Amaranth", sans-serif;
-    padding: 8px 15px;
+    padding: 10px 17px 12px;
     margin-top: 15px;
     background-color: #7F9F9F;
     color: #fff;
     text-decoration: none;
     border: none;
-    border-radius: 5px;
+    border-radius: 17px;
     transition: background-color 0.3s, color 0.3s;
     cursor: pointer;
+    font-size: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover,
@@ -338,30 +340,40 @@ article p {
 }
 
 /* Sid 4: Kontakt */
+
+.section-contact {
+    background-color: #fff;
+    text-align: center;
+    padding: 7%;
+}
+
 #contact-form {
     text-align: left;
     max-width: 500px;
-    margin: auto;
+    margin: 20px auto 10px;
+    font-family: "Akatab", sans-serif;
+    font-weight: 400;
+    color: #333;
 }
 
 #name,
 #email,
 #phone {
     width: 100%;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    padding: 5px;
-    background-color: #fff;
+    border: 2px solid #F2F6F6;
+    border-radius: 17px;
+    padding: 10px;
+    background-color: #F2F6F6;
     margin: 5px 0 10px;
 }
 
 #message {
     width: 100%;
     height: 150px;
-    padding: 5px;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #fff;
+    padding: 10px;
+    border: 2px solid #F2F6F6;
+    border-radius: 17px;
+    background-color: #F2F6F6;
     margin: 5px 0;
     /* font-size: 16px; */
     /* resize: none; */
