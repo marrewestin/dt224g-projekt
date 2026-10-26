@@ -1,4 +1,14 @@
-{
-"name": "Baguette",
-"image": "5-baguette.jpg"
-}
+[
+    {
+        "name": "Baguette",
+        "image": "5-baguette.jpg"
+    },
+    {
+        "name": "Surdegsbröd",
+        "image": "2-bread.jpg"
+    },
+        {
+        "name": "Bagels",
+        "image": "6-bagels.jpg"
+    }
+]
