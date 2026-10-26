@@ -343,7 +343,6 @@ article p {
 
 .section-contact {
     background-color: #fff;
-    text-align: center;
     padding: 7%;
 }
 
@@ -375,8 +374,8 @@ article p {
     border-radius: 17px;
     background-color: #F2F6F6;
     margin: 5px 0;
-    /* font-size: 16px; */
-    /* resize: none; */
+    display: block;
+    /*resize: none;*/
 }
 
 /* Anpassning för mellanstor skräm */
