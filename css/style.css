@@ -194,10 +194,18 @@ header a:focus {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.btn:hover,
-.btn:focus {
+.btn:hover {
     background-color: #B1CFCF;
     color: #333;
+}
+
+.btn:active {
+    background-color: #7F9F9F;
+}
+
+.btn:visited {
+    background-color: #7F9F9F;
+    color: #fff;
 }
 
 /* Sidfot */
@@ -288,7 +296,7 @@ footer a:focus {
 .grid-wrap2 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    row-gap: 20px;
+   /*  row-gap: 20px; */
     /* background-image: linear-gradient(to bottom, white, #B1CFCF); */
 }
 
@@ -339,7 +347,7 @@ footer a:focus {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    row-gap: 20px;
+    row-gap: 5px;
 }
 
 article {
