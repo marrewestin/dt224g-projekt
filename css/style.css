@@ -159,10 +159,6 @@ header a:focus {
 
 /* Startsidan */
 
-#assortment .transparent {
-    background-color: rgba(255, 255, 255, 0.8);
-}
-
 .logo-font {
     font-family: "Bowlby One", sans-serif;
     font-weight: 400;
@@ -170,7 +166,10 @@ header a:focus {
 
 #assortment {
     background-image: url("/images/2-bread.jpg");
+    background-color: rgba(255, 255, 255, 0.7); /* Genomskinlighet */
+    background-blend-mode: lighten; /* Genomskinlighet */
     background-size: 100%;
+    padding: 10%;
     background-position: center;
     text-align: center;
 }
