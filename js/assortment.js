@@ -94,7 +94,6 @@ breadEl.addEventListener("click", function () {
     console.log("klickat bröd");
 });
 
-
 sweetEl.addEventListener("click", function () {
     fetchSweetArticles()
     console.log("klickat fikabröd");

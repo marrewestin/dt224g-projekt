@@ -112,7 +112,6 @@ a {
 
 .menu ul {
     list-style: none;
-    /* display: flex;*/
 }
 
 .menu a {
@@ -142,13 +141,16 @@ header a:focus {
 
 .hero {
     background-image: url("/images/1-hero.jpg");
+    /* Genomskinlig ljus färg: */
     background-color: rgba(255, 255, 255, 0.7);
+    /* Lägger färgen ovanpå bilden: */
     background-blend-mode: lighten;
-    background-size: 100%;
-    padding: 10%;
+    /* Får bilden att täcka hela utrymmet: */
+    background-size: cover;
+    /* Centrar bilden vertikalt: */
     background-position: center;
+    padding: 10%;
     text-align: center;
-    aspect-ratio: 16 / 9;
 }
 
 .hero img {
@@ -166,9 +168,11 @@ header a:focus {
 
 #assortment {
     background-image: url("/images/2-bread.jpg");
-    background-color: rgba(255, 255, 255, 0.7); /* Genomskinlighet */
-    background-blend-mode: lighten; /* Genomskinlighet */
-    background-size: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Genomskinlighet */
+    background-blend-mode: lighten;
+    /* Genomskinlighet */
+    background-size: cover;
     padding: 10%;
     background-position: center;
     text-align: center;
@@ -247,19 +251,16 @@ footer a:focus {
 
 /* Sid 2: Om oss */
 
-#about-img {
+.grid-wrap-about {
+    display: grid;
+}
+
+#about-img1 {
     background-image: url("/images/8-bakery.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
-    aspect-ratio: 1200 / 800;
-}
-
-#about-img1 {
-    background-image: url("/images/9-bake.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
+    /* aspect-ratio krävs för att bilden ska synas */
     aspect-ratio: 1200 / 800;
 }
 
@@ -268,8 +269,8 @@ footer a:focus {
     background-size: cover;
     background-position: center;
     width: 100%;
+    /* aspect-ratio krävs för att bilden ska synas */
     aspect-ratio: 1200 / 800;
-    display: none;
 }
 
 .about-text {
@@ -289,10 +290,10 @@ footer a:focus {
 
 /* Sid 3: Sortiment */
 
-.grid-wrap2 {
+.grid-wrap-assortment {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-   /*  row-gap: 20px; */
+    /*  row-gap: 20px; */
     /* background-image: linear-gradient(to bottom, white, #B1CFCF); */
 }
 
@@ -330,7 +331,8 @@ footer a:focus {
 }
 
 #bread h2,
-#sweet h2, #sweet2 h2 {
+#sweet h2,
+#sweet2 h2 {
     background-color: rgba(255, 255, 255, 0.6);
     position: absolute;
     bottom: 0px;
@@ -339,7 +341,8 @@ footer a:focus {
     color: black;
 }
 
-#articles, #articles2 {
+#articles,
+#articles2 {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -377,16 +380,14 @@ article p {
 
 #error-list li {
     color: #BC0000;
-    /*list-style-type: none;*/
 }
 
-#sent p{
+#sent p {
     font-family: "Architects Daughter", cursive;
     font-weight: 400;
 }
 
 #contact-form {
-    /* text-align: left; */
     max-width: 500px;
     margin: 20px auto 10px;
     font-family: "Akatab", sans-serif;
@@ -419,7 +420,6 @@ article p {
     background-color: #F2F6F6;
     margin: 5px 0;
     display: block;
-    /*resize: none;*/
 }
 
 /* Anpassning för mellanstor skräm */
@@ -459,14 +459,14 @@ article p {
 
     /* Aspect-ratio för bakgrundsbilder */
     .hero,
-    .transparent {
-        aspect-ratio: 16 / 7;
+    #assortment {
+        padding: 8%;
     }
 
     /* Startsidans sortiment-sektion, bild vänster */
     #assortment2 {
         background-image: url("/images/3-buns.jpg");
-        background-size: 100%;
+        background-size: cover;
         background-position: center;
         min-width: 50%;
     }
@@ -499,8 +499,8 @@ article p {
 
     /* Aspect-ratio för bakgrundsbilder */
     .hero,
-    .transparent {
-        aspect-ratio: 16 / 5;
+    #assortment {
+        padding: 7%;
     }
 
     .section {
@@ -514,27 +514,30 @@ article p {
 
     #assortment3 {
         background-image: url("/images/6-bagels.jpg");
-        background-size: 100%;
+        background-size: cover;
         background-position: center;
         min-width: 33%;
     }
 
     /* Sid 2: Om oss */
 
-    .grid-wrap {
+    /* 2 rader x 2 kolumner */
+    .grid-wrap-about {
         grid-template-columns: 1fr 1fr;
-    }
-
-    #about-img {
-        aspect-ratio: auto;
+        grid-template-rows: 1fr 1fr;
     }
 
     #about-img1 {
-        display: none;
+        aspect-ratio: auto;
     }
-
+    /* Placerar texten till vänster i andra raden  */
+    #about-text2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    /* Placerar bilden till höger */
     #about-img2 {
-        display: block;
+        grid-column: 2/3;
         aspect-ratio: auto;
     }
 }

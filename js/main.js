@@ -7,5 +7,3 @@ const menu = document.querySelector(".menu");
 
 hamburgerBtn.addEventListener("click", function(){
 	menu.classList.toggle("open")});
-
-
