@@ -293,8 +293,6 @@ footer a:focus {
 .grid-wrap-assortment {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    /*  row-gap: 20px; */
-    /* background-image: linear-gradient(to bottom, white, #B1CFCF); */
 }
 
 #bread {
@@ -315,18 +313,6 @@ footer a:focus {
     aspect-ratio: 16 / 11;
     position: relative;
     grid-column: span 6;
-    display: none;
-    cursor: pointer;
-}
-
-#sweet2 {
-    background-image: url("/images/3-buns.jpg");
-    background-size: cover;
-    background-position: center;
-    aspect-ratio: 16 / 11;
-    position: relative;
-    grid-column: span 6;
-    display: block;
     cursor: pointer;
 }
 
@@ -343,6 +329,7 @@ footer a:focus {
 
 #articles,
 #articles2 {
+    grid-column: span 6;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -367,7 +354,6 @@ article p {
     border-radius: 0 0 10px 10px;
     padding: 10px;
     background-color: #fff;
-    /* border: 1px solid #333; */
 }
 
 /* Sid 4: Kontakt */
@@ -471,15 +457,20 @@ article p {
         min-width: 50%;
     }
 
-    #bread,
+    #bread {
+        margin-bottom: 0px;
+        grid-column: span 3;
+        display: block;
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
     #sweet {
         margin-bottom: 0px;
         grid-column: span 3;
         display: block;
-    }
-
-    #sweet2 {
-        display: none;
+        grid-column: 4/7;
+        grid-row: 1/2;
     }
 
     article {
@@ -530,11 +521,13 @@ article p {
     #about-img1 {
         aspect-ratio: auto;
     }
+
     /* Placerar texten till vänster i andra raden  */
     #about-text2 {
         grid-column: 1/2;
         grid-row: 2/3;
     }
+
     /* Placerar bilden till höger */
     #about-img2 {
         grid-column: 2/3;

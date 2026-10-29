@@ -72,12 +72,11 @@ function displaySent() {
 contactForm.addEventListener("submit", (event) => {
     // När formuläret skickas:
     event.preventDefault();
+    sent.innerHTML = ""; // Rensa tidigare skickat meddelande
     // - validera inmatningen
     if (validateForm()) {
-        console.log("Valideringen lyckades!")
 		// contactForm.submit(); // Skickar formuläret
 		displaySent();
     } else {
-		console.log("Valideringen misslyckades!")
 	}
 });
