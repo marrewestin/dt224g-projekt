@@ -17,8 +17,7 @@ async function fetchArticles() {
             throw new Error("Något gick fel med anropet."); // Kastar ett fel om anropet misslyckas
         }
         const data = await response.json(); // Konverterar svaret till JSON
-        //checkRecipes(data); // Anropar funktionen för att kontrollera om det finns recept att visa
-        console.log(data);
+    
         writeArticles(data)
     } catch (error) {
         console.error("Fel vid hämtning av data:", error); // Loggar eventuella fel som uppstår vid hämtning av data
@@ -35,8 +34,6 @@ async function fetchSweetArticles() {
             throw new Error("Något gick fel med anropet."); // Kastar ett fel om anropet misslyckas
         }
         const data = await response.json(); // Konverterar svaret till JSON
-        //checkRecipes(data); // Anropar funktionen för att kontrollera om det finns recept att visa
-        console.log(data);
         writeArticles2(data)
     } catch (error) {
         console.error("Fel vid hämtning av data:", error); // Loggar eventuella fel som uppstår vid hämtning av data
@@ -48,7 +45,6 @@ function writeArticles(data) {
     articlesEl.innerHTML=""; // Töm artiklar från tidigare klick
     articles2El.innerHTML=""; // Töm artiklar från tidigare klick
     for (let i = 0; i < data.length; i++) {
-        console.log(data[i].name);
         articlesEl.innerHTML += `
         <article class="bread-articles">
         <img src="/images/${data[i].image}" alt="${data[i].name}">
@@ -61,7 +57,6 @@ function writeArticles2(data) {
     articlesEl.innerHTML=""; // Töm artiklar från tidigare klick
     articles2El.innerHTML=""; // Töm artiklar från tidigare klick
     for (let i = 0; i < data.length; i++) {
-        console.log(data[i].name);
         articles2El.innerHTML += `
         <article class="bread-articles">
         <img src="/images/${data[i].image}" alt="${data[i].name}">
@@ -72,10 +67,8 @@ function writeArticles2(data) {
 
 breadEl.addEventListener("click", function () {
     fetchArticles()
-    console.log("klickat bröd");
 });
 
 sweetEl.addEventListener("click", function () {
     fetchSweetArticles()
-    console.log("klickat fikabröd");
 });
