@@ -195,6 +195,11 @@ header a:focus {
     display: inline-block;
 }
 
+.btn:visited {
+    background-color: #7F9F9F;
+    color: #fff;
+}
+
 .btn:hover {
     background-color: #B1CFCF;
     color: #333;
@@ -202,11 +207,6 @@ header a:focus {
 
 .btn:active {
     background-color: #7F9F9F;
-}
-
-.btn:visited {
-    background-color: #7F9F9F;
-    color: #fff;
 }
 
 /* Sidfot */
